@@ -1,0 +1,95 @@
+.experiencia .subtitulo {
+  color: #e0e0e0;
+}
+
+.experiencia.container {
+  padding-top: 120px;
+}
+.experienciaIntro {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #525252;
+}
+
+.skill {
+  color: #141414;
+}
+
+.projeto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  background: #f5f5f5;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  gap: 10px 20px;
+}
+
+.projeto h3 {
+  position: relative;
+}
+
+.projeto h3 a {
+  text-decoration: none;
+  color: #141414;
+}
+.projeto h3::before {
+  content: '';
+  width: 4px;
+  height: 13px;
+  background: url(../img/pillHot.svg);
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: -5px;
+}
+
+.projetoTitulo {
+  font-size: 1.125rem;
+  line-height: 1.1;
+
+  font-weight: bold;
+}
+
+.projetoTexto {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #525252;
+}
+
+.projetoHabilidade {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.projetoHabilidade li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  background: #ffffff;
+  padding: 5px 10px;
+}
+
+@media (max-width: 800px) {
+  .experiencia.container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .experiencia .subtitulo {
+    color: #141414;
+  }
+  .experienciaIntro {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .projeto {
+    grid-template-columns: 1fr;
+  }
+}

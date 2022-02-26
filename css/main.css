@@ -1,0 +1,66 @@
+.intro {
+  align-items: center;
+}
+
+.intro h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.intro h1::before {
+  content: '';
+  display: inline-block;
+  background: url(../img/retHot.svg);
+  height: 28px;
+  width: 28px;
+  position: absolute;
+  top: 25px;
+  left: -35px;
+}
+
+.intro p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+@media (max-width: 1000px) {
+  .intro.container h1 {
+    font-size: 3rem;
+  }
+
+  .intro.container h1::before {
+    top: 13px;
+  }
+}
+
+@media (max-width: 800px) {
+  .intro.container {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .intro.container h1 {
+    font-size: 2rem;
+  }
+
+  .intro.container h1::before {
+    top: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .intro.container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .intro.container img {
+    display: none;
+  }
+
+  .intro.container h1::before {
+    left: -5px;
+    top: 4px;
+    position: relative;
+  }
+}

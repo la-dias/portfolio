@@ -1,0 +1,31 @@
+@import './reset.css';
+@import './header.css';
+@import './main.css';
+@import './experiencia.css';
+@import './formacao.css';
+@import './footer.css';
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  gap: 100px;
+  grid-template-columns: 1fr 2fr;
+}
+
+.subtitulo {
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch !important;
+}
+
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial !important;
+  }
+}
